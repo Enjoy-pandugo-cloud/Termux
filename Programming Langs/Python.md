@@ -82,7 +82,7 @@ chmod +x hello.py
 
 ## Step 11: Installing Common Python Libraries
 Users might want to install popular Python libraries like NumPy, Pandas, etc.:
-For the pip guide [check this](https://github.com/Enjoy-pandugo-cloud/Termux/edit/main/ProgrammingLangs/Pip.md).
+For the pip guide [check this](https://github.com/Enjoy-pandugo-cloud/Termux/blob/main/Programming%20Langs/Pip.md)
 ```sh
 pip install numpy pandas requests
 ```
