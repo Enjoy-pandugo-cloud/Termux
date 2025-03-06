@@ -9,7 +9,19 @@ This guide provides an overview of what can be done using Termux, how to use its
 ### **1.1 Downloading Termux**
 Termux is not available on the Google Play Store due to policy changes. The recommended way to install it is via:
 - **[F-Droid](https://f-droid.org/packages/com.termux/)** – Official and updated version.
+
 - **[GitHub Releases](https://github.com/termux/termux-app/releases)** – Direct APK downloads.
+
+<details>
+<summary>
+  <h3><strong>Note</strong></h3>
+</summary>
+
+<p style="color: green;">
+  Using this APK method of installation is recommended. Because the Termux in Play Store has some issues and bugs.
+</p>
+
+</details>
 
 ### **1.2 Updating Termux Packages**
 After installation, update the package lists and upgrade existing packages:
