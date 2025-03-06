@@ -115,8 +115,19 @@ backup() {
 }
 ```
 
-## Step 4: Including Your `.bashrc` File
-You can include your `.bashrc` file from the following location: [Termux .bashrc](https://github.com/Enjoy-pandugo-cloud/Termux/tree/main/General/.bashrc/)
+## Step 4: Using a Custom `.bashrc` File
+
+If you want to use a preconfigured `.bashrc` file, you can download and apply it from a public repository.
+
+### Downloading and Applying a Custom `.bashrc`
+
+To download and use a custom `.bashrc` file, run:
+
+```css
+curl -o ~/.bashrc https://raw.githubusercontent.com/Enjoy-pandugo-cloud/Termux/main/General/.bashrc
+source ~/.bashrc
+```
+Orelse check this [ .bashrc](https://github.com/Enjoy-pandugo-cloud/Termux/tree/main/General/.bashrc/) once
 
 ## Conclusion
 You have successfully customized your Termux environment, including using `.bashrc` or `.zshrc` for shell customization, installing and configuring themes and plugins, and creating aliases and functions for productivity. For more advanced usage and features, refer to the official documentation of each tool.
