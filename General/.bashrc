@@ -1,45 +1,48 @@
-# ~/.bashrc
+# ~/.bashrc - Custom Configuration for Termux
 
-# Define a custom function for clearing the terminal
+# Ensure required packages are installed before using them:
+# Run: pkg install figlet w3m micro
+
+# Custom function to clear the terminal and display a message
 custom_clear() {
     tput reset  # Clears the terminal screen
-    figlet "Cleaned Tab"  # Displays the welcome message
+    figlet "Cleaned Tab"  # Displays the welcome message (requires 'figlet' package)
 }
 
-# Show "Welcome to Termux" when the terminal is opened
+# Display a welcome message on terminal startup
 clear
-figlet "Welcome to Termux"
+figlet "Welcome to Termux"  # Requires 'figlet' package
 
-# Alias the clear command to use custom_clear
+# Alias the 'clear' command to use custom_clear
 alias clear='custom_clear'
 
-# Custom Aliases
-alias ss='cd ~/storage/shared/'
-alias p='python'
-alias sb='source ~/.bashrc'
+# Custom Aliases for Convenience
+alias ss='cd ~/storage/shared/'  # Quick access to shared storage
+alias p='python'  # Short command for Python
+alias sb='source ~/.bashrc'  # Reload .bashrc
 alias eng='enjoy_pandugo'
-alias n='nano'
-alias m='micro'
-alias mb='micro ~/.bashrc'
-alias termux="cd ~/storage/shared/Programs/Termux"
-alias f='figlet'
-alias code='code-server'
-alias f='figlet'
-alias ll='ls -la'
-alias pkgupdate='pkg update && pkg upgrade'
-alias aptupdate='apt update && apt upgrade'
+alias n='nano'  # Open nano editor
+alias m='micro'  # Open micro editor (requires 'micro' package)
+alias mb='micro ~/.bashrc'  # Edit .bashrc with micro
+alias termux='cd ~/storage/shared/Programs/Termux'  # Navigate to Termux projects
+alias f='figlet'  # Quick figlet command (requires 'figlet' package)
+alias code='code-server'  # Open VS Code Server
+alias ll='ls -la'  # List all files in long format
+alias pkgupdate='pkg update && pkg upgrade -y'  # Update Termux packages
+alias aptupdate='apt update && apt upgrade -y'  # Update APT packages
 alias c='clear'
 alias cl='clear'
 alias cle='clear'
 alias clea='clear'
-alias phd='pd sh debian'
+alias phd='pd sh debian'  # Shortcut for Debian shell
 alias e='exit'
 alias enjoy='exit'
-alias browse='w3m'
+alias browse='w3m'  # Open text-based web browser (requires 'w3m' package)
 
-unset HISTFILE  # Disable command history logging
+# Disable command history logging for privacy
+unset HISTFILE  
 
-# Define a function for 'enjoy pandugo' to exit
+# Define a function for exiting Termux safely
 enjoy_pandugo() {
     pkill -f termux
     am force-stop com.termux
@@ -48,14 +51,18 @@ enjoy_pandugo() {
 
 # Custom greeting functions
 good_night() {
-   figlet "Good Night"
+   figlet "Good Night"  # Requires 'figlet' package
 }
 
 good_morning() {
-    figlet "Good Morning"
+    figlet "Good Morning"  # Requires 'figlet' package
 }
 
-# End of .bashrc
+# Run external motivation script if available
+if [ -f ~/scripts/motivation.py ]; then
+    python3 ~/scripts/motivation.py
+fi
 
-# Run motivation script (ensure the path is public-safe)
-python3 ~/scripts/motivation.py
+# Reference: Check out my motivational quotes script in the "motivational-quotes-script" repository to run it correctly
+
+# End of .bashrc
