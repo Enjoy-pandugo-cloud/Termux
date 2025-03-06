@@ -50,7 +50,7 @@ Welcome to the Termux Setup and Usage Guides repository! This repository contain
    - Using `.bashrc` or `.zshrc` for shell customization
    - Installing and configuring themes and plugins
    - Creating aliases and functions for productivity
-   - Including your own `.bashrc` file [Termux .bashrc](https://github.com/ysathyasai/Termux/tree/main/General/.bashrc/)
+   - My own `.bashrc` file [Termux .bashrc](https://github.com/ysathyasai/Termux/tree/main/General/.bashrc/)
    - [Link to Environment Customization Guide](https://github.com/Enjoy-pandugo-cloud/Termux/blob/main/General/Environment%20Customisation.md)
 
 7. **Programming Languages Installation Guide**
