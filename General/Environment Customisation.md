@@ -127,7 +127,7 @@ To download and use a custom `.bashrc` file, run:
 curl -o ~/.bashrc https://raw.githubusercontent.com/Enjoy-pandugo-cloud/Termux/main/General/.bashrc
 source ~/.bashrc
 ```
-Orelse check this [ .bashrc](https://github.com/Enjoy-pandugo-cloud/Termux/tree/main/General/.bashrc/) once
+Orelse check this [ .bashrc file](https://github.com/Enjoy-pandugo-cloud/Termux/tree/main/General/.bashrc/) once.
 
 ## Conclusion
 You have successfully customized your Termux environment, including using `.bashrc` or `.zshrc` for shell customization, installing and configuring themes and plugins, and creating aliases and functions for productivity. For more advanced usage and features, refer to the official documentation of each tool.
