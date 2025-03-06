@@ -17,11 +17,12 @@ Termux is not available on the Google Play Store due to policy changes. The reco
   <h3><strong>Note</strong></h3>
 </summary>
 
-<p style="color: green;">
-  Using this APK method of installation is recommended. Because the Termux in Play Store has some issues and bugs.
-</p>
+> **✅ Using this APK method of installation is recommended.**  
+> ⚠️ The Termux version in the Play Store has some issues and bugs.
 
 </details>
+
+---
 
 ### **1.2 Updating Termux Packages**
 After installation, update the package lists and upgrade existing packages:
