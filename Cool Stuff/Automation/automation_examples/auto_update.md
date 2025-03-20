@@ -172,9 +172,6 @@ If the update fails, check the following:
   ~/.scripts/auto_update.sh
   ```
 
----
-
-
 
 ## Conclusion:
 
