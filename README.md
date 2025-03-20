@@ -1,85 +1,260 @@
-# Termux Guide Collection
+# Termux Guide Collection: The Ultimate Resource for Android Power Users
+
+Welcome to the **Termux Guide Collection**, a comprehensive repository designed to help you unlock the full potential of Termux on your Android device. Whether you're a developer, network engineer, security enthusiast, or just someone who loves tinkering with technology, this repository has everything you need to get started and master Termux.
+
+---
+
+## Table of Contents
+
+1. [About Termux](#about-termux)
+2. [Categories](#categories)
+3. [Quick Start](#quick-start)
+4. [Project Structure](#project-structure)
+5. [Customization](#customization)
+6. [Security](#security)
+7. [Networking & Remote Access](#networking--remote-access)
+8. [Installation](#installation)
+9. [Support](#support)
+10. [Updates](#updates)
+11. [Contributing](#contributing)
+12. [License](#license)
+13. [Author](#author)
+
+---
+
+## About Termux
+
+**Termux** is a powerful terminal emulator and Linux environment app for Android. It allows you to run a full-fledged Linux shell directly on your Android device without requiring root access. With Termux, you can:
+
+- Install and use popular Linux packages.
+- Develop software using programming languages like Python, C++, and JavaScript.
+- Perform system administration tasks.
+- Automate workflows with scripts.
+- Explore networking, security, and multimedia tools.
+
+This repository is your one-stop destination for mastering Termux, with detailed guides, tips, and tools to help you customize and optimize your experience.
+
+---
 
 ## Categories
-- [Programming Languages](Programming%20Langs/README.md) - Guides for various programming languages
-- [Tools](Tools/README.md) - Essential Termux tools and utilities
-- [General](General/README.md) - General Termux usage and configuration
+
+The repository is organized into the following categories:
+
+- **[Programming Languages](Programming%20Langs/README.md)**: Guides for setting up and using various programming languages in Termux.
+- **[Tools](Tools/README.md)**: Essential Termux tools and utilities for development, media processing, networking, and more.
+- **[General](General/README.md)**: General Termux usage and configuration guides, including setup, customization, and troubleshooting.
+
+---
 
 ## Quick Start
-1. Follow the [Basic Setup Guide](General/BasicSetup.md)
-2. Check [Security Guide](General/Security.md)
-3. Configure [Shortcuts](General/Shortcuts.md)
+
+To get started with Termux, follow these steps:
+
+1. **Basic Setup**: Follow the [Basic Setup Guide](General/BasicSetup.md) to install essential packages and configure your environment.
+2. **Security Configuration**: Secure your Termux environment by following the [Security Guide](General/Security.md).
+3. **Customize Shortcuts**: Enhance productivity by configuring [Shortcuts](General/Shortcuts.md).
+
+---
 
 ## Project Structure
+
+Here is the complete file structure of the repository:
+
 ```
 Termux/
-├── Programming Langs/  # Programming language guides
-├── Tools/             # Tool-specific guides
-└── General/           # General usage guides
+├── Guide.md                  # Comprehensive guide to the repository
+├── LICENSE                   # MIT License
+├── README.md                 # Main documentation (this file)
+├── structure.txt             # File structure of the repository
+│
+├── Cool Stuff/               # Unique tools and customizations
+│   ├── Automation/           # Automate repetitive tasks
+│   │   ├── cron_jobs.md
+│   │   ├── task_scheduler.md
+│   │   └── automation_examples/
+│   │       ├── auto_backup.md
+│   │       ├── auto_clean.md
+│   │       └── auto_update.md
+│   │
+│   ├── termux_style/         # Customize Termux appearance
+│   │   ├── themes/           # Predefined themes
+│   │   │   ├── dracula_theme.md
+│   │   │   ├── gruvbox_theme.md
+│   │   │   ├── nord_theme.md
+│   │   │   └── solarized_theme.md
+│   │   ├── custom_fonts.md
+│   │   ├── oh_my_zsh.md
+│   │   ├── setup_termux_style.md
+│   │   └── zsh_setup.md
+│   │
+│   ├── Git.md                # Git setup and usage
+│   └── Web Surfing.md        # Browse the web from Termux
+│
+├── General/                  # General-purpose guides and tools
+│   ├── Backup/               # Backup and restore Termux data
+│   │   ├── backup_guide.md
+│   │   ├── cloud_sync.md
+│   │   └── restore_guide.md
+│   │
+│   ├── Distro's/             # Install Linux distributions in Termux
+│   │   ├── arch.md
+│   │   ├── debian.md
+│   │   ├── README.md
+│   │   └── ubuntu.md
+│   │
+│   ├── termux_api/           # Use the Termux API
+│   │   ├── examples/
+│   │   │   ├── battery_status.md
+│   │   │   └── sms_send.md
+│   │   └── setup_termux_api.md
+│   │
+│   ├── .bashrc               # Default bash configuration file
+│   ├── Backup.md             # Overview of backup strategies
+│   ├── BasicSetup.md         # Initial setup guide for Termux
+│   ├── Customization.md      # Customizing Termux appearance and behavior
+│   ├── Environment Customisation.md # Advanced environment setup
+│   ├── Networking Tools.md   # Networking tools and their usage
+│   ├── NetworkManagement.md  # Managing network connections in Termux
+│   ├── PackageManagement.md  # Managing packages with pkg
+│   ├── Productivity.md       # Tips for improving productivity
+│   ├── RemoteAccess.md       # Setting up SSH and remote access
+│   ├── Security.md           # Security tools and configurations
+│   ├── Shell Scripting.md    # Writing and executing shell scripts
+│   ├── Shortcuts.md          # Keyboard shortcuts and aliases
+│   └── troubleshooting.md    # Common issues and solutions
+│
+├── Programming Langs/        # Guides for programming languages
+│   ├── Ada.md
+│   ├── Assembly.md
+│   ├── C++.md
+│   ├── C.md
+│   ├── Clojure.md
+│   ├── COBOL.md
+│   ├── Crystal.md
+│   ├── Dart.md
+│   ├── Database.md
+│   ├── Elixir.md
+│   ├── Erlang.md
+│   ├── Fortran.md
+│   ├── FSharp.md
+│   ├── Go.md
+│   ├── Groovy.md
+│   ├── Haskell.md
+│   ├── Java.md
+│   ├── JavaScript.md
+│   ├── Julia.md
+│   ├── Kotlin.md
+│   ├── LISP.md
+│   ├── Lua.md
+│   ├── Node.js.md
+│   ├── OCaml.md
+│   ├── Pascal.md
+│   ├── Perl.md
+│   ├── PHP.md
+│   ├── Pip.md
+│   ├── Prolog.md
+│   ├── Python.md
+│   ├── R.md
+│   ├── Racket.md
+│   ├── README.md
+│   ├── Ruby.md
+│   ├── Rust.md
+│   ├── Scala.md
+│   ├── Swift.md
+│   ├── TypeScript.md
+│   ├── VimScript.md
+│   │
+│   └── ML_Data_Science/      # Machine learning and data science tools
+│       ├── setup_jupyter.md
+│       ├── setup_pytorch.md
+│       ├── setup_scikit.md
+│       └── setup_tensorflow.md
+│
+├── Programming Stuff/        # Advanced programming tools and environments
+│   ├── CI_CD/                # CI/CD pipeline setup
+│   │   ├── ci_cd_pipeline.md
+│   │   └── github_actions_setup.md
+│   │
+│   ├── Cloud_Integration/    # Cloud integration guides
+│   │   ├── aws_integration.md
+│   │   └── azure_integration.md
+│   │
+│   ├── Containers/           # Containerization tools
+│   │   └── docker_setup.md
+│   │
+│   └── Dev_Environment/      # Development environment setup
+│       ├── setup_emacs.md
+│       ├── setup_jetbrains.md
+│       ├── setup_neovim.md
+│       ├── setup_tmux.md
+│       └── setup_vscode.md
+│
+└── Tools/                    # General-purpose tools and utilities
+    ├── Development.md
+    ├── Media.md
+    ├── Networking.md
+    ├── README.md
+    ├── Security.md
+    └── System.md
 ```
 
-# Termux Setup and Usage Guides
+---
 
-Welcome to the Termux Setup and Usage Guides repository! This repository contains detailed guides to help you set up and use various tools and features in Termux. Below is an overview of the available guides:
+## Customization
 
-## Guides
+### Install `Oh My Zsh`
+```sh
+pkg install zsh
+sh -c "$(wget -O- https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
 
-1. **Pip Usage Guide**
-   - Installing and using pip in Termux
-   - Basic pip commands for package management
-   - Creating and using requirements files
-   - Configuring pip settings
-   - [Link to Pip Usage Guide](https://github.com/Enjoy-pandugo-cloud/Termux/blob/main/Programming%20Langs/Pip.md)
+### Apply a Custom Theme
+```sh
+git clone https://github.com/dracula/termux.git ~/.termux/
+cp ~/.termux/colors.properties ~/.termux/fonts.ttf ~/.termux/
+```
 
-2. **Git Installation and Usage Guide**
-   - Installing Git in Termux
-   - Configuring Git settings
-   - Basic Git commands
-   - Using SSH with GitHub
-   - Advanced Git commands and workflows
-   - [Link to Git Installation and Usage Guide](https://github.com/Enjoy-pandugo-cloud/Termux/blob/main/Cool%20%20Stuff/Git.md)
+![Termux Themes](https://user-images.githubusercontent.com/your-gif-link.gif)
 
-3. **Database Setup and Usage Guide**
-   - Installing SQLite, MySQL (MariaDB), and PostgreSQL in Termux
-   - Basic commands for database management
-   - Creating and managing databases
-   - Running SQL queries
-   - Backup and restore databases
-   - Automating database server startup
-   - [Link to Database Setup and Usage Guide](https://github.com/Enjoy-pandugo-cloud/Termux/blob/main/Programming%20Langs/Database.md)
+---
 
-4. **Shell Scripting Guide**
-   - Basics of shell scripting
-   - Writing and executing shell scripts
-   - Common shell commands and utilities
-   - Automating tasks with scripts
-   - Error handling and debugging in scripts
-   - Using `termux-wake-lock` for long-running scripts
-   - Scheduling scripts with cron
-   - [Link to Shell Scripting Guide](https://github.com/Enjoy-pandugo-cloud/Termux/blob/main/General/Shell%20Scripting.md)
+## Security
 
-5. **Networking Tools and Usage Guide**
-   - Installing and using networking tools like `curl`, `wget`, `ping`
-   - Basic networking commands
-   - Monitoring network traffic with `iftop` and `tcpdump`
-   - Setting up and using SSH
-   - [Link to Networking Tools and Usage Guide](https://github.com/Enjoy-pandugo-cloud/Termux/blob/main/General/Networking%20Tools.md)
+### Update and Secure Your Environment
+```sh
+pkg update && pkg upgrade
+pkg install openssh
+ssh-keygen -t rsa -b 4096
+```
 
-6. **Environment Customization Guide**
-   - Customizing the Termux environment
-   - Using `.bashrc` or `.zshrc` for shell customization
-   - Installing and configuring themes and plugins
-   - Creating aliases and functions for productivity
-   - My own `.bashrc` file [Termux .bashrc](https://github.com/ysathyasai/Termux/tree/main/General/.bashrc/)
-   - [Link to Environment Customization Guide](https://github.com/Enjoy-pandugo-cloud/Termux/blob/main/General/Environment%20Customisation.md)
+### Enable Firewall
+```sh
+pkg install ufw
+ufw enable
+```
 
-7. **Programming Languages Installation Guide**
-   - Installing various programming languages in Termux
-   - [Link to Programming Languages Installation Guide](https://github.com/Enjoy-pandugo-cloud/Termux/tree/main/Programming%20Langs)
+---
+
+## Networking & Remote Access
+
+### Connect to SSH
+```sh
+ssh user@hostname -p 8022
+```
+
+### Access Files via FTP
+```sh
+pkg install openssh
+sshd
+```
+
+---
 
 ## Installation
 
-```bash
+To clone and set up the repository:
+
+```sh
 # Clone the repository
 git clone https://github.com/ysathyasai/Termux.git
 
@@ -87,43 +262,38 @@ git clone https://github.com/ysathyasai/Termux.git
 cd Termux
 ```
 
-## Directory Structure
-```
-Termux/
-├── Programming Langs/     # Programming language guides
-│   ├── README.md
-│   └── [language guides]
-├── Tools/                # Tool-specific guides
-│   ├── README.md
-│   └── [tool guides]
-├── General/              # General usage guides
-│   ├── README.md
-│   └── [setup guides]
-└── README.md            # Main documentation
-```
+---
 
 ## Support
 
 If you encounter any issues or have questions:
-1. Open an issue on GitHub
-2. Check the troubleshooting guides
-3. Join our community discussions
+1. Open an issue on GitHub.
+2. Check the troubleshooting guides.
+3. Join our community discussions.
+
+---
 
 ## Updates
 
 This repository is actively maintained. Check back regularly for:
-- New programming language guides
-- Updated tool configurations
-- Security updates
-- Best practices
+- New programming language guides.
+- Updated tool configurations.
+- Security updates.
+- Best practices.
+
+---
 
 ## Contributing
 
 Contributions to this repository are welcome! If you have any improvements or additional guides to add, please feel free to open a pull request.
 
+---
+
 ## License
 
 This repository is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
+
+---
 
 ## Author
 
