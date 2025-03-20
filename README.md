@@ -60,6 +60,8 @@ Use SSH, FTP, and other remote access tools to manage servers and devices direct
 The repository is organized into the following categories:
 
 - **[Programming Languages](Programming%20Langs/README.md)**: Guides for setting up and using various programming languages in Termux.
+- Programming Stuff
+- Cool Stuff
 - **[Tools](Tools/README.md)**: Essential Termux tools and utilities for development, media processing, networking, and more.
 - **[General](General/README.md)**: General Termux usage and configuration guides, including setup, customization, and troubleshooting.
 
