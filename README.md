@@ -262,6 +262,29 @@ git clone https://github.com/ysathyasai/Termux.git
 cd Termux
 ```
 
+## 🔧 Essential Commands
+
+| Command | Description |
+|---------|-------------|
+| `ls` | List files in a directory |
+| `cd <dir>` | Change directory |
+| `pwd` | Show current directory |
+| `pkg search <package>` | Search for a package |
+| `pkg install <package>` | Install a package |
+| `apt update && apt upgrade` | Update all installed packages |
+| `whoami` | Check the current user |
+| `uname -a` | Display system information |
+
+
+## ❌ Troubleshooting
+
+| Issue | Solution |
+|--------|---------|
+| Command not found | Run `pkg update && pkg upgrade` |
+| Permission denied | Use `chmod +x <file>` |
+| Storage access denied | Run `termux-setup-storage` |
+| Slow package downloads | Use `pkg clean && pkg update` |
+
 ---
 
 ## Support
